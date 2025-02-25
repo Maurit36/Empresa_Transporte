@@ -1,5 +1,6 @@
 package co.edu.uniquindio.empresaTransporte;
 
+import co.edu.uniquindio.empresaTransporte.factory.ModelFactory;
 import co.edu.uniquindio.empresaTransporte.model.*;
 import java.util.*;
 
@@ -8,6 +9,7 @@ public class MainTransporte {
     private static Map<String, Integer> pasajerosTransportados = new HashMap<>();
 
     public static void main(String[] args) {
+        ModelFactory modelFactory = ModelFactory.getInstancia();
         Scanner scanner = new Scanner(System.in);
 
         {
